@@ -1,38 +1,77 @@
-.App {
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+.bg {
+  background-image: url("https://images.wallpaperscraft.com/image/lake_mountains_trees_129959_2560x1024.jpg");
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+}
+p {
+  margin-left: 7px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.315);
+}
+.search {
+  position: relative;
+  left: 50px;
+}
+.searchTerm {
+  background-color: rgba(255, 255, 255, 0.849);
+
+  border: none;
+  height: 30px;
+  width: 40vw;
+  border-radius: 20px;
+  outline: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  margin-top: 50px;
+  position: absolute;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.searchButton {
+  color: #fd0000;
+  cursor: pointer;
+  position: absolute;
+  top: -7px;
+  font-size: 17px;
+}
+.wrap {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translate(-10%, -5%);
+}
+@media (max-width: 480px) {
+  .searchTerm {
+    background-color: rgba(255, 255, 255, 0.849);
+    border: none;
+    height: 30px;
+    width: 60vw;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  p {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .searchButton {
+    font-size: 14px;
+    top: -6px;
+  }
+  .wrap {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-10%, -5%);
+  }
+  .search {
+    left: 0%;
+  }
+  .app {
+    margin-top: 40px;
   }
 }
